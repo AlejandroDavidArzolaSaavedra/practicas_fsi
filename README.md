@@ -17,19 +17,18 @@ El objetivo principal de esta práctica es demostrar cómo ambos métodos genera
 Para ejecutar la práctica y realizar las pruebas, sigue estos pasos:
 
 1. Clona este repositorio en tu máquina local:
-
+```bash
 git clone <https://github.com/AlejandroDavidArzolaSaavedra/practicas_fsi>
-
+```
 2. Navega al directorio de la práctica:
-
+```bash
 cd nombre_del_directorio
-
+```
 3. Ejecuta el programa principal con los archivos modificados:
-
+```bash
 python run.py
-
+```
 Observa los resultados de las pruebas y las comparaciones entre los métodos.
-
 
 # Contribuciones
 Si deseas contribuir a este proyecto, siéntete libre de hacerlo. Puedes abrir problemas (issues) o enviar solicitudes de extracción (pull requests) para mejorar el código o agregar nuevas características.
