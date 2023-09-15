@@ -2,7 +2,7 @@
 
 Esta práctica tiene como objetivo explorar y comparar dos métodos de búsqueda heurística comúnmente utilizados en la resolución de problemas de búsqueda en inteligencia artificial: la "Ramificación y Salto" (Branch and Bound) y la "Ramificación y Salto con Subestimación" (Branch and Bound with Underestimation).
 
-# 👥 Equipo de desarrollo
+# 👥 Equipo de desarrollo (Ctrl + Click para ver los perfiles)
 
 [![GitHub](https://img.shields.io/badge/GitHub-Andrea%20Santana%20Lopez-purple?style=flat-square&logo=github)](https://github.com/An90456)
 
