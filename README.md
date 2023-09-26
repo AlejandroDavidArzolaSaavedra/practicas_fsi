@@ -1,6 +1,6 @@
 # 📄 Práctica: "Ramificación y Salto con y sin Subestimación"
 
-Esta práctica tiene como objetivo explorar y comparar dos métodos de búsqueda heurística comúnmente utilizados en la resolución de problemas de búsqueda en inteligencia artificial: la "Ramificación y Salto" (Branch and Bound) y la "Ramificación y Salto con Subestimación" (Branch and Bound with Underestimation).
+Esta práctica tiene como objetivo explorar y comparar dos métodos de búsqueda heurística comúnmente utilizados en la resolución de problemas de búsqueda en inteligencia artificial: la "<strong>Ramificación y Salto</strong>" (Branch and Bound) y la "<strong>Ramificación y Salto con Subestimación</strong>" (Branch and Bound with Subestimation Heuristic).
 
 # 👥 Equipo de desarrollo (Ctrl + Click para ver los perfiles)
 
@@ -9,7 +9,15 @@ Esta práctica tiene como objetivo explorar y comparar dos métodos de búsqueda
 [![GitHub](https://img.shields.io/badge/GitHub-Alejandro%20David%20Arzola%20Saavedra-blue?style=flat-square&logo=github)](https://github.com/AlejandroDavidArzolaSaavedra)
   
 ## Resumen
-El objetivo principal de esta práctica es demostrar cómo ambos métodos generan el mismo camino óptimo en la búsqueda de un camino entre diferentes ciudades de inicio y destino. Sin embargo, se mostrará que uno de estos métodos realiza muchas menos visitas a los nodos del grafo de búsqueda que el otro, lo que demuestra la eficiencia de la subestimación en la toma de decisiones de búsqueda.
+El propósito principal de esta práctica es ilustrar cómo ambos métodos generan la misma solución óptima al buscar una ruta entre diferentes ciudades en el contexto del grafo de ciudades de <strong>Rumanía</strong>, como se muestra en la siguiente imagen en la que se utilizo networkx.
+
+<ul align="center">		
+  <a href="https://en.wikipedia.org/wiki/Romania" target="_blank">
+    <img style="width:30rem"  src="https://i.imgur.com/phIyAEK.png">
+  </a>
+</ul>
+
+En este caso, hemos aplicado los algoritmos de Ramificación y Acotación, así como Ramificación y Acotación con Subestimación, <strong>la heurística consiste en una línea recta desde el estado en el que nos encontramos hasta el estado final</strong>, donde se encuenta la ruta óptima entre dos ciudades en el grafo de ciudades de Rumanía. A pesar de que ambos métodos alcanzan el mismo resultado, es notable que <strong>la Ramificación y Acotación con la Heurística aplicada expande considerablemente menos nodos en el grafo de búsqueda</strong>, lo que demuestra su eficiencia en términos de recursos computacionales utilizados.
 
 
 ## Cómo Ejecutar
