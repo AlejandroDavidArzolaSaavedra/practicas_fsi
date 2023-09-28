@@ -1,9 +1,15 @@
+from abc import abstractclassmethod
+from functools import reduce
+from filecmp import cmp
+import operator
+import random
+import copy
+import math
+import os
+import sys
 
-#______________________________________________________________________________
-# Simple Data Structures: infinity, Dict, Struct
 
 infinity = 1.0e400
-
 
 def Dict(**entries):
     """Create a dict out of the argument=value arguments.
@@ -166,7 +172,7 @@ def argmin(seq, fn):
     >>> argmin(['one', 'to', 'three'], len)
     'to'
     """
-    best = seq[0];
+    best = seq[0]
     best_score = fn(best)
     for x in seq:
         x_score = fn(x)
@@ -479,7 +485,7 @@ def print_table(table, header=None, sep=' ', numfmt='%g'):
 
 def AIMAFile(components, mode='r'):
     "Open a file based at the AIMA root directory."
-    import utils
+    import main.utils as utils
 
     dir = os.path.dirname(utils.__file__)
     return open(os.path.join(*[dir] + components), mode)
@@ -507,7 +513,7 @@ class Queue:
     as lists.  If Python ever gets interfaces, Queue will be an interface."""
 
     def __init__(self):
-        abstract
+        abstractclassmethod
 
     def extend(self, items):
         for item in items:
