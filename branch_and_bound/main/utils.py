@@ -67,11 +67,6 @@ def update(x, **entries):
     return x
 
 
-#______________________________________________________________________________
-# Functions on Sequences (mostly inspired by Common Lisp)
-# NOTE: Sequence functions (count_if, find_if, every, some) take function
-# argument first (like reduce, filter, and map).
-
 def removeall(item, seq):
     """Return a copy of seq (or string) with all occurences of item removed.
     >>> removeall(3, [1, 2, 3, 3, 2, 1, 3])
@@ -549,10 +544,6 @@ class FIFOQueue(Queue):
             self.start = 0
         return e
 
-
-
-## Fig: The idea is we can define things like Fig[3,10] later.
-## Alas, it is Fig[3,10] not Fig[3.10], because that would be the same as Fig[3.1]
 Fig = {}
 
 
