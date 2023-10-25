@@ -4,7 +4,7 @@ Esta práctica tiene como objetivo explorar y comparar dos métodos de búsqueda
 
 # 👥 Equipo de desarrollo (Ctrl + Click para ver los perfiles)
 
-[![GitHub](https://img.shields.io/badge/GitHub-Andrea%20Santana%20Lopez-purple?style=flat-square&logo=github)](https://github.com/An90456)
+[![GitHub](https://img.shields.io/badge/GitHub-Andrea%20Santana%20Lopez-purple?style=flat-square&logo=github)](https://github.com/AndreaSantalos)
 
 [![GitHub](https://img.shields.io/badge/GitHub-Alejandro%20David%20Arzola%20Saavedra-blue?style=flat-square&logo=github)](https://github.com/AlejandroDavidArzolaSaavedra)
   
