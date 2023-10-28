@@ -19,6 +19,30 @@ El propósito principal de esta práctica es ilustrar cómo ambos métodos gener
 
 En este caso, hemos aplicado los algoritmos de Ramificación y Acotación, así como Ramificación y Acotación con Subestimación, <strong>la heurística consiste en una línea recta desde el estado en el que nos encontramos hasta el estado final</strong>, donde se encuenta la ruta óptima entre dos ciudades en el grafo de ciudades de Rumanía. A pesar de que ambos métodos alcanzan el mismo resultado, es notable que <strong>la Ramificación y Acotación con la Heurística aplicada expande considerablemente menos nodos en el grafo de búsqueda</strong>, lo que demuestra su eficiencia en términos de recursos computacionales utilizados.
 
+Podemos ver una comparación de las diferencias entre los algoritmos en el siguiente gráfico, donde observamos los nodos expandidos y visitados por distintos algoritmos en diferentes ciudades de Rumanía. Para esto, se utilizó lightweight-charts.
+
+<ul align="center">		
+  <a href="https://tradingview.github.io/lightweight-charts/docs" target="_blank">
+    <img style="width:50rem"  src="https://i.imgur.com/vsg211K.png">
+  </a>
+</ul>
+
+Por ultimos mostramos una tablas con todos los datos importantes recopilados de los distintos algoritmos, en las distinas ciudades de Romania:
+<ul align="center">		
+    <img style="width:40rem"  src="https://i.imgur.com/QI88qqa.png">
+</ul>
+
+<ul align="center">		
+    <img style="width:40rem"  src="https://i.imgur.com/rGoE3Jm.png">
+</ul>
+
+<ul align="center">		
+    <img style="width:40rem"  src="https://i.imgur.com/m9880jP.png">
+</ul>
+
+<ul align="center">		
+    <img style="width:40rem"  src="https://i.imgur.com/ArUzNaS.png">
+</ul>
 
 ## Cómo Ejecutar
 Para ejecutar la práctica y realizar las pruebas, sigue estos pasos:
