@@ -76,6 +76,29 @@ for start_node, goal_node in node_pairs:
     nodosExpandidosDFS = (depth_first_graph_search(gps_ubications)[2])
     costdfs=(depth_first_graph_search(gps_ubications)[3])
     costbfs=(breadth_first_graph_search(gps_ubications)[3])
+
+    # Calcular tiempo para Branch and bound 
+    start_time = time.time_ns()
+    timeit.timeit(lambda:branch_and_bound_Without(gps_ubications), number=num_executions) / num_executions
+    end_time = time.time_ns()
+    duration_bbw = (end_time - start_time) / 1_000_000
+    duration_bbw = round(duration_dfs, 3)
+    bbw_path = branch_and_bound_Without(gps_ubications)[0].path()
+    nodosVisitadosbbw = (branch_and_bound_Without(gps_ubications)[1])
+    nodosExpandidosbbw = (branch_and_bound_Without(gps_ubications)[2])
+    costbbw=(branch_and_bound_Without(gps_ubications)[3])
+
+    # Calcular tiempo para Branch and Bound with subestimation
+    start_time = time.time_ns()
+    timeit.timeit(lambda:branch_and_bound_With(gps_ubications), number=num_executions) / num_executions
+    end_time = time.time_ns()
+    duration_bbw = (end_time - start_time) / 1_000_000
+    duration_bbw = round(duration_dfs, 3)
+    bbw_path = branch_and_bound_With(gps_ubications)[0].path()
+    nodosVisitadosbbw = (branch_and_bound_With(gps_ubications)[1])
+    nodosExpandidosbbw = (branch_and_bound_With(gps_ubications)[2])
+    costbbw=(branch_and_bound_With(gps_ubications)[3])
+
     # Imprimir resultados
     print(f"Path from {start_node} to {goal_node} (BFS): {bfs_path}")
     print(f"BFS Duration: {duration_bfs} microseconds")
@@ -89,36 +112,7 @@ for start_node, goal_node in node_pairs:
     print(f"DFS nodos visitados: {nodosVisitadosDFS}")
     print(f"Coste : {costdfs}")
     print()
-
-
-     # Calcular tiempo para DFS
-    start_time = time.time_ns()
-    timeit.timeit(lambda:branch_and_bound_With(gps_ubications), number=num_executions) / num_executions
-    end_time = time.time_ns()
-    duration_bbw = (end_time - start_time) / 1_000_000
-    duration_bbw = round(duration_dfs, 3)
-    bbw_path = branch_and_bound_With(gps_ubications)[0].path()
-    nodosVisitadosbbw = (branch_and_bound_With(gps_ubications)[1])
-    nodosExpandidosbbw = (branch_and_bound_With(gps_ubications)[2])
-    costbbw=(branch_and_bound_With(gps_ubications)[3])
-    print(f"Path from {start_node} to {goal_node} (Branch_and_bound_With): {bbw_path}")
-    print(f"Branch_and_bound_With Duration: {duration_bbw} microseconds")
-    print(f"Branch_and_bound_With nodos expandidos: {nodosExpandidosbbw}")
-    print(f"Branch_and_bound_With nodos visitados: {nodosVisitadosbbw}")
-    print(f"Coste : {costbbw}")
-    print()
-
-
-    start_time = time.time_ns()
-    timeit.timeit(lambda:branch_and_bound_Without(gps_ubications), number=num_executions) / num_executions
-    end_time = time.time_ns()
-    duration_bbw = (end_time - start_time) / 1_000_000
-    duration_bbw = round(duration_dfs, 3)
-    bbw_path = branch_and_bound_Without(gps_ubications)[0].path()
-    nodosVisitadosbbw = (branch_and_bound_Without(gps_ubications)[1])
-    nodosExpandidosbbw = (branch_and_bound_Without(gps_ubications)[2])
-    costbbw=(branch_and_bound_Without(gps_ubications)[3])
-
+    
     print(f"Path from {start_node} to {goal_node} (Branch_and_bound_Without): {bbw_path}")
     print(f"Branch_and_bound_Without Duration: {duration_bbw} microseconds")
     print(f"Branch_and_bound_Without nodos expandidos: {nodosExpandidosbbw}")
@@ -126,8 +120,10 @@ for start_node, goal_node in node_pairs:
     print(f"Coste : {costbbw}")
     print()
 
+    print(f"Path from {start_node} to {goal_node} (Branch_and_bound_With): {bbw_path}")
+    print(f"Branch_and_bound_With Duration: {duration_bbw} microseconds")
+    print(f"Branch_and_bound_With nodos expandidos: {nodosExpandidosbbw}")
+    print(f"Branch_and_bound_With nodos visitados: {nodosVisitadosbbw}")
+    print(f"Coste : {costbbw}")
+    print()
 
-
-# Result:
-# [<Node B>, <Node P>, <Node R>, <Node S>, <Node A>] : 101 + 97 + 80 + 140 = 418
-# [<Node B>, <Node F>, <Node S>, <Node A>] : 211 + 99 + 140 = 450

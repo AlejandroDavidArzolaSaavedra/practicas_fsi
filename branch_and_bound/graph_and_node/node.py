@@ -1,4 +1,4 @@
-from utils import update
+from branch_and_bound.main.utils import update
 
 class Node:
     def __init__(self, state, parent=None, action=None, path_cost=0):

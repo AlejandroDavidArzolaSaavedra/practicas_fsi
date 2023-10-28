@@ -1,6 +1,6 @@
 from numpy import Infinity
 from branch_and_bound.gps_problem.problem import Problem
-from utils import distance
+from branch_and_bound.main.utils import distance
 
 class GPSProblem(Problem):
     """The problem of searching in a graph from one node to another."""
