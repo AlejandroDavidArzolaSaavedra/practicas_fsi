@@ -42,12 +42,6 @@ australia.locations = Dict(WA=(120, 24), NT=(135, 20), SA=(135, 30),
                            Q=(145, 20), NSW=(145, 32), T=(145, 42), V=(145, 37))
 
 #########################
-# TODO: Implementar Ramificación y Acotación (Branch and Bound)
-# Crear una funcion similar al  BFS y DFS y adaptarla para implementar la lógica de Ramificación y Acotación.
-# Recuerdar que hay que medir el tiempo de ejecución y contar el número de nodos expandidos y visitados.
-#########################
-
-#########################
 # TODO: Realizar test de comprobación
 # Ejecutar los algoritmos de búsqueda (BFS, DFS, Branch and Bound) para diferentes problemas y comparar los resultados.
 # Asegúrarsee de que los resultados son lógicos y consistentes con las expectativas.
