@@ -1,5 +1,5 @@
 from numpy import Infinity
-from problem import Problem
+from branch_and_bound.gps_problem.problem import Problem
 from utils import distance
 
 class GPSProblem(Problem):

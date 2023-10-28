@@ -1,0 +1,5 @@
+{
+    "python.analysis.extraPaths": [
+        "./branch_and_bound/main"
+    ]
+}

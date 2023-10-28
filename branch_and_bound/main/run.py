@@ -2,8 +2,8 @@ from search import breadth_first_graph_search
 from search import depth_first_graph_search
 from search import branch_and_bound_With
 from search import branch_and_bound_Without
-from graph import UndirectedGraph
-from gps_problem import GPSProblem
+from branch_and_bound.graph_and_node.graph import UndirectedGraph
+from branch_and_bound.gps_problem.gps_problem import GPSProblem
 from  utils import Dict
 import time, timeit
 

@@ -1,6 +1,6 @@
 from utils import *
-from node import *
-from graph import *
+from branch_and_bound.graph_and_node.node import *
+from branch_and_bound.graph_and_node.graph import *
 
 def graph_search(problem, fringe):
     """ The argument fringe should be an empty queue.
