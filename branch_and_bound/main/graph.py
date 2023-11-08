@@ -1,6 +1,6 @@
 import random
 from numpy import Infinity, argmin
-from branch_and_bound.main.utils import distance
+from utils import distance
 
 class Graph:
     def __init__(self, dict=None, directed=True):
