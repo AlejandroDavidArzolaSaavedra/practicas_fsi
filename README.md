@@ -28,6 +28,11 @@ Podemos ver una comparación de las diferencias entre los algoritmos en el sigui
 </ul>
 
 Por ultimos mostramos una tablas con todos los datos importantes recopilados de los distintos algoritmos, en las distinas ciudades de Romania:
+
+<ul align="center">		
+    <img style="width:40rem"  src="https://i.imgur.com/lhaZqFB.png">
+</ul>
+
 <ul align="center">		
     <img style="width:40rem"  src="https://i.imgur.com/QI88qqa.png">
 </ul>
