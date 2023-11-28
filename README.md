@@ -1,25 +1,30 @@
-# 📄 Práctica: "Ramificación y Salto con y sin Subestimación"
+# 📄 Practice about "Branch and Bound and Branch and Bound with subestimation"
 
-Esta práctica tiene como objetivo explorar y comparar dos métodos de búsqueda heurística comúnmente utilizados en la resolución de problemas de búsqueda en inteligencia artificial: la "<strong>Ramificación y Salto</strong>" (Branch and Bound) y la "<strong>Ramificación y Salto con Subestimación</strong>" (Branch and Bound with Subestimation Heuristic).
+this practice has the objective of searching and comparing two heuristic searching methods commonly  used in
+the resolution of searching problems in AI: "<strong>Branch and Bound</strong>" and "<strong>Branch and Bound with Subestimation Heuristic</strong>".
 
-# 👥 Equipo de desarrollo (Ctrl + Click para ver los perfiles)
+# 👥 development team (Ctrl + Click to view profiles)
 
 [![GitHub](https://img.shields.io/badge/GitHub-Andrea%20Santana%20Lopez-purple?style=flat-square&logo=github)](https://github.com/AndreaSantalos)
 
 [![GitHub](https://img.shields.io/badge/GitHub-Alejandro%20David%20Arzola%20Saavedra-blue?style=flat-square&logo=github)](https://github.com/AlejandroDavidArzolaSaavedra)
   
-## Resumen
-El propósito principal de esta práctica es ilustrar cómo ambos métodos generan la misma solución óptima al buscar una ruta entre diferentes ciudades en el contexto del grafo de ciudades de <strong>Rumanía</strong>, como se muestra en la siguiente imagen en la que se utilizo networkx.
-
+## Summary
+The principal purpose of this practice is to show how both methods generate the same optimal solution  when searching a route between diferent cities in
+the graph of <strong>Romania's cities</strong> ,as it is shown in the following image where we used networkx library.
 <ul align="center">		
   <a href="https://en.wikipedia.org/wiki/Romania" target="_blank">
     <img style="width:30rem"  src="https://i.imgur.com/phIyAEK.png">
   </a>
 </ul>
 
-En este caso, hemos aplicado los algoritmos de Ramificación y Acotación, así como Ramificación y Acotación con Subestimación, <strong>la heurística consiste en una línea recta desde el estado en el que nos encontramos hasta el estado final</strong>, donde se encuenta la ruta óptima entre dos ciudades en el grafo de ciudades de Rumanía. A pesar de que ambos métodos alcanzan el mismo resultado, es notable que <strong>la Ramificación y Acotación con la Heurística aplicada expande considerablemente menos nodos en el grafo de búsqueda</strong>, lo que demuestra su eficiencia en términos de recursos computacionales utilizados.
+In this case,we have applied the algoritms Branch and Bound and Branch and Bound with Subestimation,<strong>the heuristic consists on  to
+straight line since the state where we are until the final state</strong> where it's the optimal route between two cities in the graph of Romania's cities.
 
-Podemos ver una comparación de las diferencias entre los algoritmos en el siguiente gráfico, donde observamos los nodos expandidos y visitados por distintos algoritmos en diferentes ciudades de Rumanía. Para esto, se utilizó lightweight-charts.
+Althought both methods have the same result we can see that<strong>Branch and Bound with the heuristic applied expands less nodes in the searching graph</strong>.
+What demonstrates its eficience regarding to computacionals resources.
+
+We can see a comparation of the differences between the algoritms in the following  graphic where we can see the expanded nodes which are visited  by different algortims in different Romania's cities.For this,we used lightweight-charts.
 
 <ul align="center">		
   <a href="https://tradingview.github.io/lightweight-charts/docs" target="_blank">
@@ -27,7 +32,7 @@ Podemos ver una comparación de las diferencias entre los algoritmos en el sigui
   </a>
 </ul>
 
-Por ultimos mostramos una tablas con todos los datos importantes recopilados de los distintos algoritmos, en las distinas ciudades de Romania:
+Finally, we show some tables with all the important data recopilated from the different algoritms in the different Romania's cities.
 
 <ul align="center">		
     <img style="width:40rem"  src="https://i.imgur.com/lhaZqFB.png">
@@ -49,22 +54,21 @@ Por ultimos mostramos una tablas con todos los datos importantes recopilados de 
     <img style="width:40rem"  src="https://i.imgur.com/ArUzNaS.png">
 </ul>
 
-## Cómo Ejecutar
-Para ejecutar la práctica y realizar las pruebas, sigue estos pasos:
+## How you must execute the code
+to execute the practice and to do testing ,follow this steps
 
-1. Clona este repositorio en tu máquina local:
+1.You have to clonate this repository in your local machine:
 ```bash
 git clone <https://github.com/AlejandroDavidArzolaSaavedra/practicas_fsi>
 ```
-2. Navega al directorio de la práctica:
+2. You have to search  the directory of the practice:
 ```bash
 cd practicas_fsi
 ```
-3. Ejecuta el programa principal con los archivos modificados:
+3. you must execute the principal program with the modified files:
 ```bash
 python run.py
 ```
-Observa los resultados de las pruebas y las comparaciones entre los métodos.
-
-# 🤝 Contribuciones
-Si deseas contribuir a este proyecto, siéntete libre de hacerlo. Puedes abrir problemas (issues) o enviar solicitudes de extracción (pull requests) para mejorar el código o agregar nuevas características.
+You have to see the results of the testings and the comparisons between the methods
+# 🤝 Contributions
+if you wish to contribuite to this project you can do it.You can open "problems file"  or you can send pull requests to improve the code or adding new characteritics.
