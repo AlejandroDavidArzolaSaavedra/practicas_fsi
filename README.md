@@ -1,6 +1,6 @@
 # 📄 Practice about "Branch and Bound and Branch and Bound with subestimation"
 
-this practice has the objective of searching and comparing two heuristic searching methods commonly  used in
+This practice has the objective of searching and comparing two heuristic searching methods commonly  used in
 the resolution of searching problems in AI: "<strong>Branch and Bound</strong>" and "<strong>Branch and Bound with Subestimation Heuristic</strong>".
 
 # 👥 development team (Ctrl + Click to view profiles)
@@ -55,7 +55,7 @@ Finally, we show some tables with all the important data recopilated from the di
 </ul>
 
 ## How you must execute the code
-to execute the practice and to do testing ,follow this steps
+To execute the practice and to do testing ,follow this steps
 
 1.You have to clonate this repository in your local machine:
 ```bash
@@ -65,10 +65,10 @@ git clone <https://github.com/AlejandroDavidArzolaSaavedra/practicas_fsi>
 ```bash
 cd practicas_fsi
 ```
-3. you must execute the principal program with the modified files:
+3. You must execute the principal program with the modified files:
 ```bash
 python run.py
 ```
 You have to see the results of the testings and the comparisons between the methods
 # 🤝 Contributions
-if you wish to contribuite to this project you can do it.You can open "problems file"  or you can send pull requests to improve the code or adding new characteritics.
+If you wish to contribuite to this project you can do it.You can open "problems file"  or you can send pull requests to improve the code or adding new characteritics.
