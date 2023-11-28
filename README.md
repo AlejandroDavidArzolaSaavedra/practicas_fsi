@@ -3,7 +3,7 @@
 This practice has the objective of searching and comparing two heuristic searching methods commonly  used in
 the resolution of searching problems in AI: "<strong>Branch and Bound</strong>" and "<strong>Branch and Bound with Subestimation Heuristic</strong>".
 
-# 👥 development team (Ctrl + Click to view profiles)
+# 👥 Development team (Ctrl + Click to view profiles)
 
 [![GitHub](https://img.shields.io/badge/GitHub-Andrea%20Santana%20Lopez-purple?style=flat-square&logo=github)](https://github.com/AndreaSantalos)
 
