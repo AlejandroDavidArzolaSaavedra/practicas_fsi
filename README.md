@@ -14,7 +14,7 @@ The principal purpose of this practice is to show how both methods generate the 
 the graph of <strong>Romania's cities</strong> ,as it is shown in the following image where we used networkx library.
 <ul align="center">		
   <a href="https://en.wikipedia.org/wiki/Romania" target="_blank">
-    <img style="width:30rem"  src="https://i.imgur.com/phIyAEK.png">
+    <img style="width:30rem"  src="https://github.com/AlejandroDavidArzolaSaavedra/practicas_fsi/assets/90756437/abbc3b68-651c-4100-a7dc-0a4c81130e6e">
   </a>
 </ul>
 
