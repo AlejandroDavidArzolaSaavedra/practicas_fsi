@@ -4,14 +4,12 @@ from matplotlib.offsetbox import OffsetImage, AnnotationBbox
 import cairosvg  # Asegúrate de que esta biblioteca esté instalada
 import random
 
-
 def generate_random_color(min_brightness=0.7):
     while True:
         r, g, b = [random.random() for _ in range(3)]
         brightness = (r * 299 + g * 587 + b * 114) / 1000  # Calculate brightness (Luma)
         if brightness >= min_brightness:
             return f'#{int(r * 255):02x}{int(g * 255):02x}{int(b * 255):02x}'
-
 
 # Define el gráfico de Rumania
 romania_graph = nx.Graph()
@@ -47,7 +45,6 @@ pos = nx.get_node_attributes(romania_graph, 'pos')
 labels = {node: node for node in romania_graph.nodes()}
 
 random_node_colors = [generate_random_color() for _ in romania_graph.nodes()]
-#label_positions = {k: (x, y - 10) for k, (x, y) in pos.items()}  # Adjust the '-10' for the desired displacement
 
 nx.draw(romania_graph, pos, with_labels=False, labels=None, node_size=800, node_color=random_node_colors, font_size=12, font_weight='bold')
 edge_labels = nx.get_edge_attributes(romania_graph, 'weight')
@@ -55,13 +52,6 @@ nx.draw_networkx_edge_labels(romania_graph, pos, edge_labels=edge_labels)
 
 # Draw node labels with adjusted positions
 nx.draw_networkx_labels(romania_graph, pos=pos, labels=labels, font_size=12, font_weight='bold')
-
-
-
-
-#nx.draw(romania_graph, label_positions, with_labels=True, labels=labels, node_size=800, node_color=random_node_colors, font_size=12, font_weight='bold')
-#edge_labels = nx.get_edge_attributes(romania_graph, 'weight')
-#nx.draw_networkx_edge_labels(romania_graph, pos, edge_labels=edge_labels)
 
 # Convierte la imagen SVG en PNG y agrega la bandera de Rumania como fondo
 cairosvg.svg2png(url="https://upload.wikimedia.org/wikipedia/commons/7/73/Flag_of_Romania.svg", write_to="romania_flag.png")
@@ -74,6 +64,5 @@ plt.title("Mapa de Romania", fontsize=16, y=0.73)
 plt.text(330.5, 250.00, "ULPGC - 2023", fontsize=16, fontweight='bold', ha='center', va='center')
 plt.text(330.5, 240.00, "Fundamentos de los Sistemas Inteligentes", fontsize=16, fontweight='bold', ha='center', va='center')
 plt.text(330.5, 230.00, " ", fontsize=16, fontweight='bold', ha='center', va='center')
-
 
 plt.show()
