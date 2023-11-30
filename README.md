@@ -1,4 +1,4 @@
-# 📄 Practice about "Branch and Bound and Branch and Bound with subestimation"
+Branch and Bound and Branch and Bound with subestimation
 
 This practice has the objective of searching and comparing two heuristic searching methods commonly  used in
 the resolution of searching problems in AI: "<strong>Branch and Bound</strong>" and "<strong>Branch and Bound with Subestimation Heuristic</strong>".
