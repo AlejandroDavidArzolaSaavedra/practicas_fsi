@@ -1,4 +1,4 @@
-**Romania Map Visualization** 🗺️
+<h1 align="center">Romania Map Visualization 🗺️</h1>
 
 This repository contains a Python file named `romania_map.py` that allows you to visualize the map of Romania. You can compile and run this code locally or access an interactive version on [Trinket](https://trinket.io/embed/python3/a5bd54189b).
 
