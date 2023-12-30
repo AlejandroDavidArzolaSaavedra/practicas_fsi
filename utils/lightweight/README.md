@@ -1,4 +1,4 @@
-# Graph Nodes Romania Visualization 📊
+<h1 align="center">Graph Nodes Romania Visualization 📊</h1>
 
 This files, includes interactive bar charts representing the performance metrics of different search algorithms across various cities in Romania. The duration, expanded nodes, and visited nodes are visualized for each algorithm.
 
