@@ -1,6 +1,6 @@
 # Graph Nodes Romania Visualization 📊
 
-This HTML file, named `index.html`, includes interactive bar charts representing the performance metrics of different search algorithms across various cities in Romania. The duration, expanded nodes, and visited nodes are visualized for each algorithm.
+This files, includes interactive bar charts representing the performance metrics of different search algorithms across various cities in Romania. The duration, expanded nodes, and visited nodes are visualized for each algorithm.
 
 ## How to Use:
 
