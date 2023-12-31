@@ -71,4 +71,6 @@ python run.py
 ```
 You have to see the results of the testings and the comparisons between the methods
 # 🤝 Contributions
-If you wish to contribuite to this project you can do it.You can open "problems file"  or you can send pull requests to improve the code or adding new characteritics.
+
+<img align="left" width="300" height="200" src="https://github.com/AlejandroDavidArzolaSaavedra/practicas_fsi/assets/90756437/c3c24ba1-4081-455a-8c5b-799f2edcf0d6"></a>
+<p width="200">If you wish to contribuite to this project you can do it.You can open "problems file"  or you can send pull requests to improve the code or adding new characteritics.</p>
