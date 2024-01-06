@@ -1,20 +1,20 @@
 import networkx as nx
 import matplotlib.pyplot as plt
 from matplotlib.offsetbox import OffsetImage, AnnotationBbox
-import cairosvg  # Asegúrate de que esta biblioteca esté instalada
+import cairosvg 
 import random
 
 def generate_random_color(min_brightness=0.7):
     while True:
         r, g, b = [random.random() for _ in range(3)]
-        brightness = (r * 299 + g * 587 + b * 114) / 1000  # Calculate brightness (Luma)
+        brightness = (r * 299 + g * 587 + b * 114) / 1000 
         if brightness >= min_brightness:
             return f'#{int(r * 255):02x}{int(g * 255):02x}{int(b * 255):02x}'
 
-# Define el gráfico de Rumania
+
 romania_graph = nx.Graph()
 
-# Agrega nodos con sus posiciones
+
 romania_locations = {
     'Arad': (91, 492), 'Bucharest': (400, 327), 'Cracovia': (253, 288), 'Dobreta': (165, 299),
     'Efoire': (562, 293), 'Fagaras': (305, 449), 'Giurgiu': (375, 270), 'Hirsova': (534, 350),
@@ -50,17 +50,17 @@ nx.draw(romania_graph, pos, with_labels=False, labels=None, node_size=800, node_
 edge_labels = nx.get_edge_attributes(romania_graph, 'weight')
 nx.draw_networkx_edge_labels(romania_graph, pos, edge_labels=edge_labels)
 
-# Draw node labels with adjusted positions
+
 nx.draw_networkx_labels(romania_graph, pos=pos, labels=labels, font_size=12, font_weight='bold')
 
-# Convierte la imagen SVG en PNG y agrega la bandera de Rumania como fondo
+# Convierte la imagen SVG en PNG 
 cairosvg.svg2png(url="https://upload.wikimedia.org/wikipedia/commons/7/73/Flag_of_Romania.svg", write_to="romania_flag.png")
 flag_image = plt.imread("romania_flag.png")
 imagebox = OffsetImage(flag_image, zoom=0.1)
 ab = AnnotationBbox(imagebox, (0.5, 0.70), frameon=False, xycoords='axes fraction')
 plt.gca().add_artist(ab)
 plt.title("Mapa de Romania", fontsize=16, y=0.73)
-# Add the second title with bold font
+
 plt.text(330.5, 250.00, "ULPGC - 2023", fontsize=16, fontweight='bold', ha='center', va='center')
 plt.text(330.5, 240.00, "Fundamentos de los Sistemas Inteligentes", fontsize=16, fontweight='bold', ha='center', va='center')
 plt.text(330.5, 230.00, " ", fontsize=16, fontweight='bold', ha='center', va='center')
