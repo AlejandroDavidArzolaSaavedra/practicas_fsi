@@ -1,5 +1,9 @@
 <h1 align=center>Branch and Bound and Branch and Bound with subestimation</h1>
 
+<p align="center">
+  <img width="400px" src="https://github.com/AlejandroDavidArzolaSaavedra/practicas_fsi/assets/90756437/0156d764-228f-4ca3-b8df-716e36b95943"/>  
+</p>
+
 This practice has the objective of searching and comparing two heuristic searching methods commonly  used in
 the resolution of searching problems in AI: "<strong>Branch and Bound</strong>" and "<strong>Branch and Bound with Subestimation Heuristic</strong>".
 
@@ -72,5 +76,5 @@ python run.py
 You have to see the results of the testings and the comparisons between the methods
 # 🤝 Contributions
 
-<img align="left" width="300" height="200" src="https://github.com/AlejandroDavidArzolaSaavedra/practicas_fsi/assets/90756437/c3c24ba1-4081-455a-8c5b-799f2edcf0d6"></a>
+<img align="left" width="150" height="150" src="https://github.com/AlejandroDavidArzolaSaavedra/practicas_fsi/assets/90756437/53bfd2bf-273b-4d83-8041-382ee21aedec"></a>
 <p width="200">If you wish to contribuite to this project you can do it.You can open "problems file"  or you can send pull requests to improve the code or adding new characteritics.</p>
