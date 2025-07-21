@@ -30,34 +30,6 @@ What demonstrates its eficience regarding to computacionals resources.
 
 We can see a comparation of the differences between the algoritms in the following  graphic where we can see the expanded nodes which are visited  by different algortims in different Romania's cities. For this, we used lightweight-charts.
 
-<ul align="center">		
-  <a href="https://tradingview.github.io/lightweight-charts/docs" target="_blank">
-    <img style="width:50rem"  src="https://i.imgur.com/vsg211K.png">
-  </a>
-</ul>
-
-Finally, we show some tables with all the important data recopilated from the different algoritms in the different Romania's cities.
-
-<ul align="center">		
-    <img style="width:40rem"  src="https://i.imgur.com/lhaZqFB.png">
-</ul>
-
-<ul align="center">		
-    <img style="width:40rem"  src="https://i.imgur.com/QI88qqa.png">
-</ul>
-
-<ul align="center">		
-    <img style="width:40rem"  src="https://i.imgur.com/rGoE3Jm.png">
-</ul>
-
-<ul align="center">		
-    <img style="width:40rem"  src="https://i.imgur.com/m9880jP.png">
-</ul>
-
-<ul align="center">		
-    <img style="width:40rem"  src="https://i.imgur.com/ArUzNaS.png">
-</ul>
-
 ## How you must execute the code
 To execute the practice and to do testing ,follow this steps
 
